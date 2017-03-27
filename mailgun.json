@@ -1,0 +1,8 @@
+{
+   "apiKey": "your mailgun api key",
+   "fromAddress": "Team <noreply@yourdomain.com>",
+   "domain": "yourdomain.com",
+   "recipient": "your@email.com",
+   "username": "you",
+   "appName": "YourApp"
+}
