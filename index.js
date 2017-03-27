@@ -41,19 +41,19 @@ var api = new ParseServer({
   // The public URL of your app.
   // This will appear in the link that is used to verify email addresses and reset passwords.
   // Set the mount path as it is in serverURL
-  publicServerURL: 'https://example.com/parse',
+  publicServerURL: process.env.SERVER_URL,
   // Your apps name. This will appear in the subject and body of the emails that are sent.
-  appName: 'Parse App',
+  appName: 'Cheer',
   // The email adapter
   emailAdapter: {
     module: 'parse-server-simple-mailgun-adapter',
     options: {
       // The address that your emails come from
-      fromAddress: 'parse@example.com',
+      fromAddress: 'cheerapp@cheer.host',
       // Your domain from mailgun.com
-      domain: 'example.com',
+      domain: 'mg.cheerapp.host',
       // Your API key from mailgun.com
-      apiKey: 'key-mykey',
+      apiKey: 'pubkey-d900608c8f3abf58fc6d405f26c9a375',
     }
   },
 
