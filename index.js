@@ -53,7 +53,7 @@ var api = new ParseServer({
       // Your domain from mailgun.com
       domain: 'mg.cheerapp.host',
       // Your API key from mailgun.com
-      apiKey: 'pubkey-d900608c8f3abf58fc6d405f26c9a375',
+      apiKey: 'key-afc1ced29ef576a7be3ff08b3a540351',
     }
   },
 
