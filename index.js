@@ -40,7 +40,7 @@ var api = new ParseServer({
 
   // set preventLoginWithUnverifiedEmail to false to allow user to login without verifying their email
   // set preventLoginWithUnverifiedEmail to true to prevent user from login if their email is not verified
-  preventLoginWithUnverifiedEmail: true, // defaults to false
+  preventLoginWithUnverifiedEmail: false, // defaults to false
 
   // The public URL of your app.
   // This will appear in the link that is used to verify email addresses and reset passwords.
