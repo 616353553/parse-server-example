@@ -40,7 +40,7 @@ var api = new ParseServer({
 
   // set preventLoginWithUnverifiedEmail to false to allow user to login without verifying their email
   // set preventLoginWithUnverifiedEmail to true to prevent user from login if their email is not verified
-  preventLoginWithUnverifiedEmail: true, // defaults to false
+  preventLoginWithUnverifiedEmail: false, // defaults to false
 
   // The public URL of your app.
   // This will appear in the link that is used to verify email addresses and reset passwords.
@@ -82,6 +82,16 @@ var api = new ParseServer({
     resetTokenValidityDuration: 24*60*60, // expire after 24 hours
   }
 });
+
+function validatePassword(password) {
+  var isValid = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,16})/.test(password) && password !== "";
+  console.log("password: ");
+  console.log(password);
+  console.log(isValid.toString());
+
+  return isValid;
+}
+
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
 // javascriptKey, restAPIKey, dotNetKey, clientKey
